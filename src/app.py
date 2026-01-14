@@ -36,7 +36,7 @@ if uploaded_file is not None:
     st.sidebar.success("Loaded uploaded file!")
 elif os.path.exists(default_path):
     df_raw = load_data(default_path)
-    st.sidebar.info(f"Using default dataset: {default_path}")
+    # st.sidebar.info(f"Using default dataset: {default_path}")
 else:
     st.error("No data found. Please upload a CSV or generate data first.")
     st.stop()
